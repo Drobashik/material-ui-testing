@@ -5,7 +5,7 @@ import './style.css';
 import { Box } from '@mui/system';
 import { pages } from './API';
 
-export const Header = () => {
+export const Header = ({changePageComponent = () => {}}) => {
     return (
         <>
             <AppBar position='sticky' sx={{padding: '0 100px'}}>
@@ -31,6 +31,9 @@ export const Header = () => {
                         {pages.map(page => (
                             <Button
                                 key={page}
+                                onClick={() => {
+                                    changePageComponent(page.toLowerCase())
+                                }}
                             >
                                 {page}
                             </Button>
