@@ -1,0 +1,25 @@
+div ul .MuiListItem-root {
+    transition: 300ms;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+div ul .MuiListItem-root:hover {
+    background-color: #f3e8e8;
+}
+
+div ul .MuiSvgIcon-root {
+    margin-right: 10px;
+}
+
+.MuiGrid-root.MuiGrid-container {
+    transition: height 0.3s;
+    height: 0;
+    overflow: hidden;
+    padding: 0 20px 0px 20px;
+}
+
+.MuiGrid-root.MuiGrid-container.opened {
+    height: 130px;
+}

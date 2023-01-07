@@ -1,0 +1,14 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center .MuiButtonBase-root {
+  background-color: black;
+  text-transform: capitalize;
+}
+.center .MuiButtonBase-root:hover {
+  background-color: white;
+  color: black;
+}

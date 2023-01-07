@@ -1,0 +1,12 @@
+.MuiBox-root .MuiButtonBase-root {
+    color: white;
+    display: block;
+    border-radius: 0;
+    border-bottom: 1px solid transparent;
+    transition: 300ms;
+    padding-bottom: 5px;
+}
+
+.MuiBox-root .MuiButtonBase-root:hover {
+    border-bottom: 1px solid #fff;
+}
