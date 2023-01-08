@@ -3,11 +3,7 @@ import { ListContainer } from '../../List'
 
 export const UserListContainer = () => {
     const [users, setUsers] = useState([]);
-
-    useEffect(() => {
-        getUsers()
-    }, [])
-  
+    
     const getUsers = async () => {
       const response = await fetch('https://jsonplaceholder.typicode.com/users');
       const usersResponse = await response.json();
@@ -19,6 +15,10 @@ export const UserListContainer = () => {
         return prevUserArray.filter(user => user.id !== userId)
       })
     }
+
+    useEffect(() => {
+        getUsers()
+    }, [])
 
     return (
         <>

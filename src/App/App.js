@@ -15,13 +15,17 @@ function App() {
   const [components, setComponents] = useState(componentsArray);
 
   const changePageComponent = (chosenPath) => {
+    for (let component of components) {
+      if (component.path === chosenPath && component.selected) return;
+    }
+
     setComponents(prevArrayObject => (
       prevArrayObject.map((object) => {
         object.selected = false;
         return object.path === chosenPath ? (
           {...object, selected: true}
         ) : (
-          {...object}
+          object
         )
       })
     ))

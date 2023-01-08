@@ -1,9 +1,9 @@
+import React from 'react';
 import { AppBar, Button, Toolbar, Typography } from '@mui/material';
 import BeenhereIcon from '@mui/icons-material/Beenhere';
-import React from 'react';
-import './style.css';
 import { Box } from '@mui/system';
 import { pages } from './API';
+import './style.css';
 
 export const Header = ({changePageComponent = () => {}}) => {
     return (

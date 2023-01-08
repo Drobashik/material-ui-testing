@@ -1,10 +1,9 @@
 import React from 'react';
-import './style.css';
 import { ListUserItem } from './ListUserItem';
 import { List } from '@mui/material';
+import './style.css';
 
 export const ListContainer = ({ users, deleteUsers }) => {
-
     return (
         <div>
             <List>
